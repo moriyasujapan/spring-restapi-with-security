@@ -42,27 +42,27 @@ Authorization: Bearer {$token}
 
 ---
 
-**Test all***
+**Test no auth page.**
 
 GET /api/test/all
 
 No Authorities required.
 
-***Test user***
+***Test required user role page.***
 
 GET /api/test/user
 
 User Role required.
 token is valid and has user role then see the "User Content", otherwise thrown a exception.
 
-***Test mod***
+***Test required mod role page.***
 
 GET /api/test/mod
 
 Moderate Role required
 token is valid and has moderate role then see the "User Content", otherwise thrown a exception.
 
-***Test admin***
+***Test required admin role page.***
 
 GET /api/test/admin
 
